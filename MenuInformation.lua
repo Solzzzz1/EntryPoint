@@ -1,5 +1,5 @@
 local l__MENU__l = {}
-l__MENU__l.UseGear = false
+l__MENU__l.UseGear = true -- currently broken MB!
 print("MenuChanger.lua has started running. / github.com/Solzzzz1/EntryPoint/new/main/MenuChanger.lua")
 
 local intelpage = game.Players.LocalPlayer.PlayerGui.ReadyGui.Loadout.IntelPage
