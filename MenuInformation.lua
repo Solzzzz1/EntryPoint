@@ -69,7 +69,7 @@ function l__MENU__l:ModifyIntelPage(tbl)
 end
 
 function l__MENU__l:XChangeInfo(bt, txt)
-  assert(bt.ClassName == "TextButton", "" .. bt.Name .. " is not a text button."
+  assert(bt.ClassName == "TextButton", "" .. bt.Name .. " is not a text button.")
   bt.Content.Text = txt
   bt.Content.Shadow.Text = txt
 end
