@@ -2,9 +2,9 @@ local a = {}
 function a:VoidNPCs()
   for _, v in pairs(workspace.Level.Actors:GetChildren()) do
     if v.Name == 'Character' then
-      coroutine.wrap(function() while task.wait() do v.HumanoidRootPart.CFrame = CFrame.new(500,500,500) end end)()
+      for i=1,10 do v.HumanoidRootPart.CFrame = CFrame.new(500,500,500) task.wait(0.1) end
     else
-      coroutine.wrap(function() while task.wait() do v.Character.HumanoidRootPart.CFrame = CFrame.new(500,500,500) end end)()
+      for i=1,10 do v.Character.HumanoidRootPart.CFrame = CFrame.new(500,500,500) task.wait(0.1) end
     end
   end
 end
